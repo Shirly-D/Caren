@@ -19,7 +19,7 @@
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- To adhear no-cache for Chrome -->
   <!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
@@ -47,36 +47,46 @@
   <div class="container">
     <!--header section start-->
     <header>
-      <div class="wrapper">
-        <ul class="header-top">
-          <li><span>en</span><span>de</span></li>
-          <li id="search"><a href="#fixme" title="Search"></a></li>
-          <li id="facebook"><a href="#fixme" title="Facebook"></a></li>
-          <li id="twitter"><a href="#fixme" title="Twitter"></a></li>
-          <li id="pinterest"><a href="#fixme" title="Pinterest"></a></li>
-          <li id="instagram"><a href="#fixme" title="Instagram"></a></li>
-          <li id="t-icon"><a href="#fixme" title="T-icon"></a></li>
-          <li id="youtube"><a href="#fixme" title="Youtube"></a></li>
-        </ul>
-        <nav class="header-bottom">
-          <div>
-            <h1>
-              <a href="index.html">
-                <img src="./assets/images/logo-carenpfleger.png" alt="Logo">Caren Pfleger
-              </a>
-            </h1>
-          </div>
+      <div class="header-top">
+        <div class="wrapper">
           <ul>
-            <li id="home"><a href="index.html" title="Home"></a></li>
-            <li><a href="#fixme" title="Studio">studio</a></li>
-            <li><a href="#fixme" title="Collection">collection</a></li>
-            <li><a href="#fixme" title="Care">care</a></li>
-            <li><a href="#fixme" title="Stockists">stockists</a></li>
-            <li><a href="#fixme" title="Press">press</a></li>
-            <li><a href="#fixme" title="Contact">contact</a></li>
+            <li><span>en</span><span>de</span></li>
+            <li class="search"><a href="#fixme" title="Search"></a></li>
           </ul>
-        </nav>
+          <ul>
+            <li class="facebook"><a href="#fixme" title="Facebook"></a></li>
+            <li class="twitter"><a href="#fixme" title="Twitter"></a></li>
+            <li class="pinterest"><a href="#fixme" title="Pinterest"></a></li>
+            <li class="instagram"><a href="#fixme" title="Instagram"></a></li>
+            <li class="t-icon"><a href="#fixme" title="T-icon"></a></li>
+            <li class="youtube"><a href="#fixme" title="Youtube"></a></li>
+          </ul>
+        </div>
       </div>
+      <nav class="header-bottom">
+        <div class="wrapper">
+          <h1>
+            <a href="index.html">
+              <img src="./assets/images/logo-carenpfleger.png" alt="Logo">Caren Pfleger
+            </a>
+          </h1>
+          <div class="menu">
+            <input type="checkbox" class="toggle">
+            <div class="hamburger">
+              <div></div>
+            </div>
+            <ul class="ul-list">
+              <li class="home"><a href="index.html" title="Home"></a></li>
+              <li><a href="#fixme" title="Studio">studio</a></li>
+              <li><a href="#fixme" title="Collection">collection</a></li>
+              <li><a href="#fixme" title="Care">care</a></li>
+              <li><a href="#fixme" title="Stockists">stockists</a></li>
+              <li><a href="#fixme" title="Press">press</a></li>
+              <li><a href="#fixme" title="Contact">contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--header section start-->
@@ -87,26 +97,93 @@
           <figure>
             <img src="./assets/images/banner.jpg" alt="image1">
           </figure>
-          <span id="previous"></span>
-          <span id="next"></span>
-
+          <span class="previous"></span>
+          <span class="next"></span>
+          <div class="banner-dots">
+            <span class="dot1"></span>
+            <span class="dot1 active"></span>
+            <span class="dot1"></span>
+            <span class="dot1"></span>
+          </div>
         </div>
       </section>
 
+      <section class="images-section">
+        <div class="wrapper">
+          <ul>
+            <li>
+              <figure>
+                <img src="assets/images/studio.jpg" alt="image2">
+              </figure>
+            </li>
+            <li class="image-li">
+              <figure>
+                <img src="assets/images/base.jpg" alt="image2">
+              </figure>
+              <span>read more <img src="assets/images/home-content-hover.png" alt="image3"></span>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/caren.jpg" alt="image2">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/collection.jpg" alt="image2">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/stories.jpg" alt="image2">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="assets/images/post-details.jpg" alt="image2">
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!--main section end-->
 
     <!--footer section start-->
     <footer>
-
+      <div class="footer-top">
+        <div class="wrapper">
+          <ul>
+            <li class="facebook"><a href="#fixme" title="Facebook"></a></li>
+            <li class="twitter"><a href="#fixme" title="Twitter"></a></li>
+            <li class="pinterest"><a href="#fixme" title="Pinterest"></a></li>
+            <li class="instagram"><a href="#fixme" title="Instagram"></a></li>
+            <li class="t-icon"><a href="#fixme" title="T-icon"></a></li>
+            <li class="youtube"><a href="#fixme" title="Youtube"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <div class="footer-para">
+            <p>&copy; 2013 caren pfleger. all rights reserved</p>
+          </div>
+          <ul class="ul-list">
+            <li class="home"><a href="index.html" title="Home"></a></li>
+            <li><a href="#fixme" title="Studio">studio</a></li>
+            <li><a href="#fixme" title="Collection">collection</a></li>
+            <li><a href="#fixme" title="Care">care</a></li>
+            <li><a href="#fixme" title="Stockists">stockists</a></li>
+            <li><a href="#fixme" title="Press">press</a></li>
+            <li><a href="#fixme" title="Contact">contact</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
     <!--footer section end-->
 
   </div>
   <!--container end-->
 
-  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
-<script src="js/script.js"></script> -->
 </body>
 
 </html>
