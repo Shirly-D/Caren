@@ -107,7 +107,100 @@ li {
   Header styling starts here
 =================================*/
 
+header {
+  border-top: 10px solid #000002; 
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #5C5D5F;
+  opacity: 0.7;
+  padding: 20px 0;
+  
+}
 
+.header-top {
+  width: 100%; 
+  float: right;
+  display: block; 
+  
+}
+
+.header-top .wrapper > ul {
+  display: inline-block;
+  width: 30%;
+}
+
+.header-top .wrapper > ul > li span {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+}
+
+.header-top .wrapper > ul > li > span:first-child:after {
+  content: " ";
+  border-right: 2px solid #fff;
+  height: 10px;
+}
+
+.search {
+  left: 0;
+  background: url('../images/sprite.png') -33px 125px ;
+  width: 8%;
+  height: 20px;
+}
+
+.header-top ul:nth-child(2) {
+  display: inline-block;
+  float: right;
+}
+
+.header-top .facebook {
+  width: 50%;
+  height: 25px;
+  background: url(../images/sprite.png) 90px 177px;
+  float: right;
+}
+
+.header-bottom h1 {
+  display: inline-block;
+}
+
+.header-bottom h1 a {
+  text-indent: -10px;
+}
+
+.header-bottom h1 a img {
+  width: 70%;
+}
+
+.header-bottom .ul-list {
+  float: right;
+}
+
+.header-bottom .ul-list li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header-bottom .ul-list li a::after {
+  content: " ";
+  border-right: 2px solid #fff;
+  height: 10px;
+  margin-right: 2%;
+}
+
+.header-bottom .ul-list li a:hover {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.menu input {
+  display: none;
+}
 
 
 
@@ -119,9 +212,89 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.banner-section .wrapper {
+  width: 100%;
+  max-width: 1665px;
+}
 
+.previous {
+  left: 0;
+  position: absolute;
+  background: url('../images/sprite.png') 200px;
+  top: 200px;
+}
 
+main section:nth-child(2) {
+  width: 100%;
+  max-width: 1360px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
 
+.images-section ul li {
+ width: calc(50% - 5px);
+ display: inline-block;
+ vertical-align: top;
+}
+
+.images-section ul li:first-child {
+  width: 32%;
+}
+
+.images-section ul li:nth-child(2) {
+  width: 66%;
+  margin-left: calc(1% - 5px);
+  margin-bottom: 10px;
+}
+
+.images-section ul li:nth-child(3) {
+  width: 32%;
+}
+
+.images-section ul li:nth-child(4) {
+  width: 32%;
+  margin-left: calc(1% - 5px);
+}
+
+.images-section ul li:nth-child(5) {
+  width: 32%;
+  margin-left: calc(1% - 5px);
+  margin-bottom: 10px;
+}
+
+.images-section ul li:last-child {
+  width: 100%;
+}
+
+.images-section ul li figure {
+  width: 100%;
+}
+
+.images-section ul li figure img {
+  width: 100%;
+}
+
+.image-li {
+  position: relative;
+  opacity: 0.7;
+}
+
+.image-li span {
+  text-transform: capitalize;
+  position: absolute;
+  color: #972A69;
+  top: 200px;
+  left: 37%;
+  font-size: 25px;
+
+}
+
+.image-li span > img {
+  width: 21%;
+  position: absolute;
+  top: 3px;
+  left: 100%;
+}
 
 
 
@@ -135,6 +308,57 @@ li {
   footer styling starts here
 =================================*/ 
 
+footer {
+  width: 100%;
+  max-width: 1665px;
+}
+.footer-top {
+  padding: 20px 0;
+  background-color: #000;
+}
+
+.footer-top .facebook {
+  width: 15%;
+  height: 25px;
+  background: url(../images/sprite.png) 76px 179px;
+  float: right;
+}
+
+.footer-bottom {
+  background-color: #000;
+  padding: 30px 0;
+}
+
+.footer-para {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.footer-bottom .ul-list {
+  float: right;
+}
+
+.footer-bottom .ul-list li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-bottom .ul-list li a::after {
+  content: " ";
+  border-right: 2px solid #fff;
+  height: 10px;
+}
+
+.footer-bottom .ul-list li a:hover {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
 
 
 
@@ -147,8 +371,15 @@ li {
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 540px) {
 
+  .header-top ul:nth-child(2) {
+    display: none;
+  }
+
+  .header-bottom .ul-list {
+    display: none;
+  }
 
 
 }  
