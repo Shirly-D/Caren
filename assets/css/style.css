@@ -122,44 +122,63 @@ header {
 .header-top {
   width: 100%; 
   float: right;
-  display: block; 
+  display: inline-block; 
   
 }
 
-.header-top .wrapper > ul {
+.header-top .wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-div {
+  float: right;
+  display: inline-block;
+  width: 57%;
+}
+
+.header-div > ul {
   display: inline-block;
   width: 30%;
 }
 
-.header-top .wrapper > ul > li span {
+.header-div > ul > li span {
   text-transform: uppercase;
   font-size: 16px;
   color: #fff;
 }
 
-.header-top .wrapper > ul > li > span:first-child:after {
+.header-div > ul > li > span:first-child:after {
   content: " ";
   border-right: 2px solid #fff;
   height: 10px;
 }
 
+.header-div ul li input {
+  width: 30%;
+  background-color: #6D6E72;
+}
+
+.header-div ul li button {
+  width: 20%;
+  height: 24px;
+}
+
 .search {
   left: 0;
   background: url('../images/sprite.png') -33px 125px ;
-  width: 8%;
-  height: 20px;
+  height: 25px;
 }
 
 .header-top ul:nth-child(2) {
   display: inline-block;
-  float: right;
 }
 
 .header-top .facebook {
   width: 50%;
   height: 25px;
-  background: url(../images/sprite.png) 90px 177px;
-  float: right;
+  background: url(../images/sprite.png) 4px 178px;
 }
 
 .header-bottom h1 {
@@ -187,7 +206,7 @@ header {
   content: " ";
   border-right: 2px solid #fff;
   height: 10px;
-  margin-right: 2%;
+  margin-left: 3%;
 }
 
 .header-bottom .ul-list li a:hover {
@@ -289,10 +308,10 @@ main section:nth-child(2) {
 
 }
 
-.image-li span > img {
-  width: 21%;
+.image-li span img {
+  width: 20%;
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 100%;
 }
 
@@ -381,5 +400,55 @@ footer {
     display: none;
   }
 
+  .header-div ul li {
+    display: none;
+  }
+
+  .image-li span {
+    display: none;
+  }
+
+  .footer-bottom ul li {
+    display: none;
+  }
+
+  .footer-para p {
+    text-align: center;
+  }
+
+  .images-section ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+  }
+
+  .menu input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -90px;
+    left: 80%;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000;
+    border-radius: 3px;
+    top: -85px;
+    left: 81.5%;
+    
+  }
 
 }  
